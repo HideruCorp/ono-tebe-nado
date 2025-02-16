@@ -41,3 +41,84 @@
   place-self: center end;
 }
 
+.main__cover {
+  position: relative;
+  height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-origin: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+}
+
+.text-left {
+  align-self: start;
+}
+
+.text-center {
+  align-self: center;
+}
+
+.text-right {
+  align-self: end;
+}
+
+.title-extended {
+  letter-spacing: 0.3em;
+  margin-right: -0.3em;
+}
+
+.main__cover-button {
+  background-color: transparent;
+  border: 1px solid white;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 28px;
+  color: white;
+  padding: 11px 31px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+}
+
+.main__cover-header {
+  padding: 165px 50px 50px 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  place-content: stretch space-between;
+}
+
+.main__cover-title {
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 115%;
+  display: flex;
+  flex-flow: column nowrap;
+  place-content: center stretch;
+}
+
+.main__cover-title > span + span {
+  margin-top: 20px;
+}
+
+.main__cover-description {
+  display: flex;
+  flex-flow: row nowrap;
+  place-items: baseline stretch;
+  place-content: center space-between;
+}
+
+.main__cover-subtitle {
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  word-spacing: 1.4ch;
+}
