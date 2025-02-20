@@ -15,15 +15,15 @@
   <!-- Шапка страницы -->
   <header class="header">
     <nav class="header__menu">
-      <ul class="header__menu-links">
+      <ul class="header__menu-links text-lowercase">
         <li class="header__menu-item header__menu-item--active">
-          <a class="header__menu-link custom-underline link-active" href="/index.html">Главная</a>
+          <a class="custom-underline link-active" href="/index.html">Главная</a>
         </li>
         <li class="header__menu-item">
-          <a class="header__menu-link custom-underline" href="#lots">Посмотреть лоты</a>
+          <a class="custom-underline" href="#lots">Посмотреть лоты</a>
         </li>
         <li class="header__menu-item">
-          <a class="header__menu-link custom-underline" href="#about">Об аукционе</a>
+          <a class="custom-underline" href="#about">Об аукционе</a>
         </li>
       </ul>
     </nav>
@@ -39,30 +39,30 @@
   <main class="main">
     <!-- Сплеш-скрин "Оно тебе надо" -->
     <section class="main__cover">
-      <header class="overlay main__cover-header">
-        <h1 class="main__cover-title">
+      <header class="overlay main__cover-header text-uppercase">
+        <h1 class="main__cover-title text-uppercase">
           <span class="text-left word-extended">Оно</span>
           <span class="text-center"><span class="word-extended">Теб</span>е</span>
           <span class="text-right"><span class="word-extended">Над</span>о</span>
         </h1>
         <div class="main__cover-description">
-          <h3 class="main__cover-subtitle">
+          <h3 class="main__cover-subtitle text-uppercase">
             Аукцион вещей, в которые никто не верил
           </h3>
-          <button class="main__cover-button">Сделать ставку</button>
+          <a href="#" class="main__cover-button">Сделать ставку</a>
         </div>
       </header>
     </section>
     <!-- Витрина "Лоты" -->
     <section class="main__lots">
-      <h2 class="main__title main__lots-title" id="lots">Лоты</h2>
+      <h2 class="main__lots-title text-uppercase" id="lots">Лоты</h2>
       <ul class="main__lots-gallery">
         <li>
           <article class="main__lots-item-card">
             <img class="main__lots-item-image" src="images/card-lot-01.jpg"
               alt="Кадр из фильма Лакричная Пицца, снятого Полом Томасом Андерсеном в ноябре 2021 г.">
             <div class="overlay main__lots-item-information">
-              <h3 class="main__lots-item-title">
+              <h3 class="main__lots-item-title text-uppercase">
                 <a href="#1">Фильм режиссёра, который бросил киношколу</a>
               </h3>
               <p class="main__lots-item-description">
@@ -77,7 +77,7 @@
           <article class="main__lots-item-card">
             <img class="main__lots-item-image" src="images/card-lot-02.jpg" alt="Обложка книги Улисс Джеймса Джойса.">
             <div class="overlay main__lots-item-information">
-              <h3 class="main__lots-item-title">
+              <h3 class="main__lots-item-title text-uppercase">
                 <a href="#2">Книга, где описан один скучный день из жизни рекламного
                   агента</a>
               </h3>
@@ -97,7 +97,7 @@
             <img class="main__lots-item-image" src="images/card-lot-03.jpg"
               alt="Картина Черный и Фиолетовый Василия Кандинского, написанная в 1921 г.">
             <div class="main__lots-item-information overlay">
-              <h3 class="main__lots-item-title">
+              <h3 class="main__lots-item-title text-uppercase">
                 <a href="#3">Картина, которую повторит даже 5-летний сын маминой подруги</a>
               </h3>
               <p class="main__lots-item-description">
@@ -113,12 +113,12 @@
       <a class="main__lots-browse-link custom-underline" href="#0">посмотреть больше</a>
     </section>
     <!-- Секция "Об аукционе" -->
-    <section class="main__about">
+    <section id="about" class="main__about">
       <div class="main__about-logo-frame">
         <img class="main__about-logo-image" src="images/logo-white.svg"
           alt="Логотип 'Оно Тебе Надо' на фоне черного круга">
       </div>
-      <h2 class="main__about-title">Об аукционе</h2>
+      <h2 class="main__about-title text-uppercase">Об аукционе</h2>
       <div class="main__about-description">
         <p>
           Здесь вы не встретите очередное пафосное собрание невероятно
@@ -139,7 +139,37 @@
       </div>
     </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <address class="contacts footer__contacts">
+      <a class="custom-underline" href="tel:+99995555555">+9 999 555 5555</a><br>
+      <a class="custom-underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+      наб. Принсенграхт 263-265, Амстердам
+    </address>
+    <nav class="footer__menu">
+      <ul class="footer__menu-links text-lowercase">
+        <li>
+          <a class="custom-underline link-active" href="/index.html">Главная</a>
+        </li>
+        <li>
+          <a class="custom-underline" href="#lots">Посмотреть лоты</a>
+        </li>
+        <li>
+          <a class="custom-underline" href="#about">Об аукционе</a>
+        </li>
+      </ul>
+    </nav>
+    <aside class="footer__socials">
+      <a href="#5" class="footer__social-link">
+        <img src="images/yt.svg" alt="Мы в Youtube">
+      </a>
+      <a href="#6" class="footer__social-link">
+        <img src="images/vk.svg" alt="Мы в ВК">
+      </a>
+      <a href="#7" class="footer__social-link">
+        <img src="images/pinterest.svg" alt="Мы в Pinterest">
+      </a>
+    </aside>
+  </footer>
 </body>
 
 </html>
